@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
       isValid = false;
       messages.push("Username must be at least 3 characters long.");
     }
+    
+     // Email validation: should include '@' and '.'
+    if (!email.includes("@") || !email.includes(".")) {
+      isValid = false;
+      messages.push("Email must contain '@' and '.' characters.");
+    }
+
