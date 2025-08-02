@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim(); 
 
+    // Validation logic
+
+     let isValid = true;
+     const messages = [];
+
