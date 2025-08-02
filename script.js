@@ -6,3 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", function (event) {
     // Include event.preventDefault to prevent normal submission
     event.preventDefault(); 
+
+
+  // Retrieve and trim input values by id
+    const username = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim(); 
+
