@@ -35,3 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
       isValid = false;
       messages.push("Password must be at least 8 characters long.");
     }
+
+    // Display feedback
+    feedbackDiv.style.display = "block"; // ensure it's visible
+    if (isValid) {
+        //if successful show green
+      feedbackDiv.textContent = "Registration successful!";
+      feedbackDiv.style.color = "#28a745"; 
+
+    } else {
+        //otherwise show red
+      feedbackDiv.innerHTML = messages.join("<br>");
+      feedbackDiv.style.color = "#dc3545"; 
+    }
+  });
+});
