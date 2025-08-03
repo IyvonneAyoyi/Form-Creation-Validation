@@ -26,4 +26,12 @@ const users = await response.json();
       li.textContent = user.name;
       userList.appendChild(li);
     });
-    dataContainer.appendChild(userList);    
+    dataContainer.appendChild(userList);
+    
+    // Error Handling
+    } catch (err) {
+    dataContainer.innerHTML = '';
+    dataContainer.textContent = 'Failed to load user data.';
+    console.error('Error fetching user data:', err);
+  }
+}
