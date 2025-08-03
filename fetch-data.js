@@ -35,3 +35,8 @@ const users = await response.json();
     console.error('Error fetching user data:', err);
   }
 }
+
+// Invoke fetchUserData on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  fetchUserData();
+});
