@@ -10,3 +10,7 @@ async function fetchUserData() {
     return;
   }
 
+// Fetch data 
+try {
+const response = await fetch(apiUrl);
+const users = await response.json();
