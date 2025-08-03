@@ -13,4 +13,8 @@ async function fetchUserData() {
 // Fetch data 
 try {
 const response = await fetch(apiUrl);
+  
 const users = await response.json();
+
+// Clear loading message
+    dataContainer.innerHTML = '';
